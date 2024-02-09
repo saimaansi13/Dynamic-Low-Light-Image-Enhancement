@@ -26,4 +26,4 @@ This project focuses on enhancing low-light images and developing a denoising mo
 - TensorFlow
 - OpenCV
 - Albumentations
-- Other dependencies (install using `requirements.txt`)
+- Other dependencies 
