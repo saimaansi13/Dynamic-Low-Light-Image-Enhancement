@@ -26,4 +26,6 @@ This project focuses on enhancing low-light images and developing a denoising mo
 - TensorFlow
 - OpenCV
 - Albumentations
-- Other dependencies 
+- Other dependencies
+
+### Dataset - LOL Dataset - https://www.kaggle.com/datasets/soumikrakshit/lol-dataset
