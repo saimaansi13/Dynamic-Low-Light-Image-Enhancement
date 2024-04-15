@@ -45,6 +45,7 @@ The albumentations library is used to perform data augmentation on images. The t
 
 ```python
 import albumentations as A
+
 transform = A.Compose([
     A.GaussNoise(var_limit=(10.0, 50.0), p=0.5),
     A.RandomBrightnessContrast(brightness_limit=0, contrast_limit=(-0.2, 0.2), p=1.0),
