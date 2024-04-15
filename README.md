@@ -1,10 +1,11 @@
-<img width="428" alt="aug1" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/e568cf93-a69b-4c3d-b142-337f4ac6018f"><img width="428" alt="aug2" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/1beab515-f7dd-46c9-8d8f-feb009f0a1ad">
-## Dynamic-Low-Light-Image-Enhancement
+# Dynamic-Low-Light-Image-Enhancement
+
 ## Overview
 
 This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images using computer vision techniques, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
 
 ## Image Pre-Processing Pipeline
+
 ### Original Image 
 
 <img width="404" alt="Original Image " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/43187aa1-d98c-4955-9fb8-957a42be68a9">
@@ -61,7 +62,7 @@ To optimize the model's performance, I chose to train the model with the Adam op
 
 During training, the model's performance was evaluated on a separate validation dataset. The training process involved iterating over the dataset for a specified number of epochs with a batch size of 32.
 
-<img width="715" alt="Training img " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/0ce0f329-276a-4396-ab8b-3612cd1c6fcb">
+<img width="1000" alt="Training img " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/0ce0f329-276a-4396-ab8b-3612cd1c6fcb">
 
 ```python
 model = keras.Sequential([
