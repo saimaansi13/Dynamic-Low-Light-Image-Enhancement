@@ -1,13 +1,18 @@
 ## Dynamic-Low-Light-Image-Enhancement
 ## Overview
 
-This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
+This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images using computer vision techniques, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
 
-## Project Structure
+## Techniques Used
 
-### 1. Preprocess Low-Light Images
-- **Input:** Raw low-light images in 'our485' dataset.
-- **Output:** Preprocessed low-light images using Contrast Limited Adaptive Histogram Equalization (CLAHE) and linear brightening.
+### 1. Contrast Limited Adaptive Histogram Equalization (CLAHE)
+CLAHE is a variant of adaptive histogram equalization (AHE) that enhances local contrast by limiting the amplification of the contrast in homogeneous regions. In this project, CLAHE is applied to each color channel of the low-light image to improve visibility while preserving details.
+(```clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+clahe_b = clahe.apply(b)
+clahe_g = clahe.apply(g)
+clahe_r = clahe.apply(r)
+clahe_color_image = cv2.merge([clahe_b, clahe_g, clahe_r])```)
+
 
 ### 2. Augment Low-Light Images
 - **Input:** Preprocessed low-light images and corresponding high-quality images.
