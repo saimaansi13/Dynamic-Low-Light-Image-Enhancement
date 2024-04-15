@@ -11,7 +11,8 @@ This project focuses on enhancing low-light images and developing a denoising mo
 ### LAB Color Space Conversion
 The LAB color space comprises three components: L (lightness), A (green-red), and B (blue-yellow). Converting the original image to LAB allows for the separation of luminance from chrominance, enabling independent manipulation of brightness and color information. By isolating and enhancing the luminance component (L-channel), it becomes possible to improve brightness and clarity without significantly amplifying noise or introducing unwanted artifacts. Moreover, preserving color accuracy and detail through the separation of luminance and chrominance results in more natural-looking and visually appealing low-light image conversions.
 ```python
-lab_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2LAB)```
+lab_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2LAB)
+```
 
 <img width="404" alt="After LAB" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/94b2c6dc-dfeb-4fe5-806e-fcf69a01eae4">
 
