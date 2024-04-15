@@ -7,11 +7,13 @@ This project focuses on enhancing low-light images and developing a denoising mo
 
 ### 1. Contrast Limited Adaptive Histogram Equalization (CLAHE)
 CLAHE is a variant of adaptive histogram equalization (AHE) that enhances local contrast by limiting the amplification of the contrast in homogeneous regions. In this project, CLAHE is applied to each color channel of the low-light image to improve visibility while preserving details.
-(```clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+```python
+clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
 clahe_b = clahe.apply(b)
 clahe_g = clahe.apply(g)
 clahe_r = clahe.apply(r)
-clahe_color_image = cv2.merge([clahe_b, clahe_g, clahe_r])```)
+clahe_color_image = cv2.merge([clahe_b, clahe_g, clahe_r])
+```
 
 
 ### 2. Augment Low-Light Images
