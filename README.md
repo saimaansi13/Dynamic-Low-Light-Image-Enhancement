@@ -95,4 +95,5 @@ model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_siz
 - Computational resources for model training and evaluation
 - Other dependencies
 
-## Dataset - LOL Dataset - https://www.kaggle.com/datasets/soumikrakshit/lol-dataset
+## Dataset
+### LOL Dataset - https://www.kaggle.com/datasets/soumikrakshit/lol-dataset
