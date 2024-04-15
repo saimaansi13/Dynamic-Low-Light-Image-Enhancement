@@ -17,7 +17,7 @@ The LAB color space comprises three components: L (lightness), A (green-red), an
 lab_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2LAB)
 ```
 
-<img width="603" alt="labimgg" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/f88de295-e223-49de-be88-7bb56b3497d4">
+<img width="406" alt="labimgg" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/f88de295-e223-49de-be88-7bb56b3497d4">
 
 
 ### Contrast Limited Adaptive Histogram Equalization (CLAHE)
