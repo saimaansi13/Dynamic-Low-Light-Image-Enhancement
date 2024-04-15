@@ -37,7 +37,7 @@ preprocessed_image = brightness_adjusted_image / 255.0
 <img width="524" alt="After Linear brightning" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/8949228b-9715-407b-b128-cd9db8dbd7dd">
 
 ### Data Augmentation with Albumentations
-The albumentations library is used to perform data augmentation on images. The transform variable contains a composition of augmentation techniques, including Gaussian noise addition (GaussNoise) and random brightness and contrast adjustments (RandomBrightnessContrast).The num_augmentations variable specifies the number of augmented images to generate per original image during training. These transformations helped introduce variations in brightness, contrast, and noise levels, making the dataset more robust and diverse. 
+The albumentations library is used to perform data augmentation on images. The transform variable contains a composition of augmentation techniques, including Gaussian noise addition (GaussNoise) and random brightness and contrast adjustments (RandomBrightnessContrast).The num_augmentations variable specifies the number of augmented images to generate per original image during training. These transformations are applied directly to the low-light images to introduce variations in brightness, contrast, and noise levels, enhancing the dataset's robustness and diversity. 
 
 ```python
 import albumentations as A
@@ -47,7 +47,7 @@ transform = A.Compose([
 ])
 num_augmentations = 2
 ```
-![Augument 1](https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/6bb25721-444d-40ae-8c03-c4b1fb4c760c)  ![Augument 2](https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/41642b41-fbe6-40c0-a71f-de6ba49dbb99)
+![Augument 1](https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/6bb25721-444d-40ae-8c03-c4b1fb4c760c)![Augument 2](https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/41642b41-fbe6-40c0-a71f-de6ba49dbb99)
 
 ### 3. Train Denoising Model
 - **Architecture:** A CNN with convolutional layers for noise reduction and brightness enhancement.
