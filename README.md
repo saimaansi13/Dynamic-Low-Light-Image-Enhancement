@@ -82,10 +82,10 @@ model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_siz
 ```
 ## Example Image
 ### Input Image: Raw Low-Light Image
-<img width="613" alt="input_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/38435584-658a-4b30-8b97-3b3b721cfddc">
+<img width="500" alt="input_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/38435584-658a-4b30-8b97-3b3b721cfddc">
 
 ### Final Output Image: Enhanced and denoised image
-<img width="610" alt="Final output_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/b7a2d327-6214-4404-9601-c1e43e86fb99">
+<img width="500" alt="Final output_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/b7a2d327-6214-4404-9601-c1e43e86fb99">
 
 ## Prerequisites
 - Python 3.x
