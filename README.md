@@ -38,7 +38,7 @@ clahe_color_image = cv2.cvtColor(lab_clahe, cv2.COLOR_LAB2RGB)
 brightness_adjusted_image = np.clip(clahe_color_image * brightness_factor, 0, 255).astype(np.uint8)
 preprocessed_image = brightness_adjusted_image / 255.0
 ```
-<img width="524" alt="After Linear brightning" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/8949228b-9715-407b-b128-cd9db8dbd7dd">
+<img width="406" alt="After Linear brightning" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/8949228b-9715-407b-b128-cd9db8dbd7dd">
 
 ## Data Augmentation with Albumentations
 The albumentations library is used to perform data augmentation on images. The transform variable contains a composition of augmentation techniques, including Gaussian noise addition (GaussNoise) and random brightness and contrast adjustments (RandomBrightnessContrast).The num_augmentations variable specifies the number of augmented images to generate per original image during training. These transformations were applied to the preprocessed low-light images to introduce variations in brightness, contrast, and noise levels, enhancing the dataset's robustness and diversity. 
