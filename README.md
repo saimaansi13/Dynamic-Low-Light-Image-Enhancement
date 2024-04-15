@@ -53,7 +53,7 @@ num_augmentations = 2
 ```
 
 <img width="428" alt="aug1" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/12982f77-efc7-4ee3-bb49-447b040e40aa">
-<img width="428" alt="aug2" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/3d19055e-a6ad-4fe5-a3c4-5263dc25d8f9">
+<img width="427" alt="aug2" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/3d19055e-a6ad-4fe5-a3c4-5263dc25d8f9">
 
 
 ## Image Denoising Model
