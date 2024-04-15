@@ -65,7 +65,7 @@ To optimize the model's performance, I chose to train the model with the Adam op
 
 During training, the model's performance was evaluated on a separate validation dataset. The training process involved iterating over the dataset for a specified number of epochs with a batch size of 32.
 
-<img width="1000" alt="Training img " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/0ce0f329-276a-4396-ab8b-3612cd1c6fcb">
+<img width="800" alt="Training img " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/0ce0f329-276a-4396-ab8b-3612cd1c6fcb">
 
 ```python
 model = keras.Sequential([
@@ -82,17 +82,17 @@ model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_siz
 ```
 ## Example Image
 ### Input Image: Raw Low-Light Image
-<img width="500" alt="input_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/38435584-658a-4b30-8b97-3b3b721cfddc">
+<img width="450" alt="input_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/38435584-658a-4b30-8b97-3b3b721cfddc">
 
 ### Final Output Image: Enhanced and denoised image
-<img width="500" alt="Final output_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/b7a2d327-6214-4404-9601-c1e43e86fb99">
+<img width="450" alt="Final output_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/b7a2d327-6214-4404-9601-c1e43e86fb99">
 
 ## Prerequisites
 - Python 3.x
 - TensorFlow
 - OpenCV
 - Albumentations
-- Computational resources for model training and evaluatio
+- Computational resources for model training and evaluation
 - Other dependencies
 
 ## Dataset - LOL Dataset - https://www.kaggle.com/datasets/soumikrakshit/lol-dataset
