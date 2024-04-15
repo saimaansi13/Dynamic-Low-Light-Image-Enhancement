@@ -1,4 +1,5 @@
-<img width="428" alt="aug1" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/e568cf93-a69b-4c3d-b142-337f4ac6018f"><img width="428" alt="aug2" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/1beab515-f7dd-46c9-8d8f-feb009f0a1ad">## Dynamic-Low-Light-Image-Enhancement
+<img width="428" alt="aug1" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/e568cf93-a69b-4c3d-b142-337f4ac6018f"><img width="428" alt="aug2" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/1beab515-f7dd-46c9-8d8f-feb009f0a1ad">
+## Dynamic-Low-Light-Image-Enhancement
 ## Overview
 
 This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images using computer vision techniques, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
