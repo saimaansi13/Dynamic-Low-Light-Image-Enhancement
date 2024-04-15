@@ -4,6 +4,9 @@
 
 This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images using computer vision techniques, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
 
+## Outcome 
+![OUTCOME (1)](https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/1f6054a8-8d2c-4a67-b86f-26362caa01fb)
+
 ## Image Pre-Processing Pipeline
 The preprocessing pipeline involves several steps to prepare low-light images for denoising:
 
@@ -80,13 +83,6 @@ model.compile(optimizer=optimizer, loss='mse')
 
 model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_size=32)
 ```
-## Example Image
-### Input Image: Raw Low-Light Image
-<img width="450" alt="input_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/38435584-658a-4b30-8b97-3b3b721cfddc">
-
-### Final Output Image: Enhanced and denoised image
-<img width="450" alt="Final output_img" src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/b7a2d327-6214-4404-9601-c1e43e86fb99">
-
 ## Prerequisites
 - Python 3.x
 - TensorFlow
