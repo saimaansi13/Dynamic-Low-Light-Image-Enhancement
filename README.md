@@ -3,8 +3,9 @@
 
 This project focuses on enhancing low-light images and developing a denoising model using convolutional neural networks (CNN). The pipeline involves preprocessing low-light images using computer vision techniques, augmenting the dataset, training a denoising model, and evaluating its performance on new images.
 
-## Image Processing Pipeline
-### Original Image 
+## Image Pre-Processing Pipeline
+### Original Image <img width="404" alt="Original Image " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/43187aa1-d98c-4955-9fb8-957a42be68a9">
+
 ![Original Image](https://ibb.co/yqY3Kc1)
 
 ### LAB Color Space Conversion
