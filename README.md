@@ -37,7 +37,6 @@ clahe_lab_image = cv2.merge([l_clahe, a, b])
 ### Linear Brightening and RGB Conversion
 The CLAHE-enhanced LAB image is first converted to RGB color space. Following the conversion, linear brightening is applied to the RGB image. Here each pixel's value is multiplied by a specified factor, adjusting the overall brightness while preserving the relative contrast. Finally, the resulting brightened image is normalized to range between 0 and 1, preparing it for subsequent processing steps.
 ```python
-clahe_color_image = cv2.cvtColor(lab_clahe, cv2.COLOR_LAB2RGB)
 brightness_adjusted_image = np.clip(clahe_color_image * brightness_factor, 0, 255).astype(np.uint8)
 preprocessed_image = brightness_adjusted_image / 255.0
 ```
@@ -70,19 +69,6 @@ During training, the model's performance was evaluated on a separate validation 
 
 <img width="800" alt="Training img " src="https://github.com/saimaansi13/Dynamic-Low-Light-Image-Enhancement/assets/125540201/0ce0f329-276a-4396-ab8b-3612cd1c6fcb">
 
-```python
-model = keras.Sequential([
-    layers.Conv2D(64, (3, 3), activation='relu', padding='same', input_shape=(None, None, 3)),
-    layers.Conv2D(64, (3, 3), activation='relu', padding='same'),
-    layers.Conv2D(128, (3, 3), activation='relu', padding='same'),
-    layers.Conv2D(3, (3, 3), activation='linear', padding='same')
-])
-
-optimizer = keras.optimizers.Adam(learning_rate=0.001)
-model.compile(optimizer=optimizer, loss='mse')
-
-model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_size=32)
-```
 ## Prerequisites
 - Python 3.x
 - TensorFlow
